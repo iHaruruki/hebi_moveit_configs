@@ -9,35 +9,53 @@ default_acceleration_scaling_factor: 0.1
 # Joint limits can be turned off with [has_velocity_limits, has_acceleration_limits]
 joint_limits:
   J1_base:
+    has_position_limits: true
+    min_position: -1.30
+    max_position: 0.80
     has_velocity_limits: true
-    max_velocity: 3.1419999999999999
+    max_velocity: 3.5
     has_acceleration_limits: true
     max_acceleration: 1.0
   J2_shoulder:
+    has_position_limits: true
+    min_position: 0.00
+    max_position: 1.50
     has_velocity_limits: true
-    max_velocity: 1.571
+    max_velocity: 3.5
     has_acceleration_limits: true
     max_acceleration: 1.0
   J3_elbow:
+    has_position_limits: true
+    min_position: 1.00
+    max_position: 3.50
     has_velocity_limits: true
-    max_velocity: 3.1419999999999999
+    max_velocity: 3.5
     has_acceleration_limits: true
     max_acceleration: 1.0
   J4_wrist1:
+    has_position_limits: true
+    min_position: -1.50
+    max_position: 4.70
     has_velocity_limits: true
-    max_velocity: 9.4250000000000007
+    max_velocity: 3.5
     has_acceleration_limits: true
     max_acceleration: 1.0
   J5_wrist2:
+    has_position_limits: true
+    min_position: -0.50
+    max_position: 3.50
     has_velocity_limits: true
-    max_velocity: 9.4250000000000007
+    max_velocity: 3.5
     has_acceleration_limits: true
     max_acceleration: 1.0
   J6_wrist3:
+    #has_position_limits: true
+    #min_position: -1.70
+    #max_position: 5.00
     has_velocity_limits: true
-    max_velocity: 9.4250000000000007
+    max_velocity: 9.00
     has_acceleration_limits: true
-    max_acceleration: 1.0
+    max_acceleration: 20.00
   end_effector_1/center_hub_l_inner_linkage:
     has_velocity_limits: false
     max_velocity: 0

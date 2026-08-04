@@ -50,6 +50,58 @@
     <group_state name="closed" group="gripper">
         <joint name="end_effector_1/input_l_finger" value="1.1466"/>
     </group_state>
+    
+    
+    
+    <group_state name="uetukami1" group="hebi_arm">
+        <joint name="J1_base" value="0.4721"/>
+        <joint name="J2_shoulder" value="0.6109"/>
+        <joint name="J3_elbow" value="0.8552"/>
+        <joint name="J4_wrist1" value="-1.3090"/>
+        <joint name="J5_wrist2" value="1.5882"/>
+        <joint name="J6_wrist3" value="-2.5482"/>
+    </group_state>
+    
+    <group_state name="uetukami2" group="hebi_arm">
+        <joint name="J1_base" value="0.4721"/>
+        <joint name="J2_shoulder" value="0.6109"/>
+        <joint name="J3_elbow" value="0.8552"/>
+        <joint name="J4_wrist1" value="-1.3090"/>
+        <joint name="J5_wrist2" value="1.5882"/>
+        <joint name="J6_wrist3" value="1.5000"/>
+    </group_state>
+        
+    <group_state name="uetukami3" group="hebi_arm">
+        <joint name="J1_base" value="0.4721"/>
+        <joint name="J2_shoulder" value="0.6109"/>
+        <joint name="J3_elbow" value="0.8552"/>
+        <joint name="J4_wrist1" value="-1.3090"/>
+        <joint name="J5_wrist2" value="1.5882"/>
+        <joint name="J6_wrist3" value="0.0000"/>
+    </group_state>
+  
+    <group_state name="uetukami4" group="hebi_arm">
+        <joint name="J1_base" value="0.4721"/>
+        <joint name="J2_shoulder" value="0.6109"/>
+        <joint name="J3_elbow" value="0.8552"/>
+        <joint name="J4_wrist1" value="-1.3090"/>
+        <joint name="J5_wrist2" value="1.5882"/>
+        <joint name="J6_wrist3" value="3.0000"/>
+    </group_state>
+    
+    
+    
+    <group_state name="home" group="hebi_arm">
+        <joint name="J1_base" value="-0.1396"/>
+        <joint name="J2_shoulder" value="1.2043"/>
+        <joint name="J3_elbow" value="2.7053"/>
+        <joint name="J4_wrist1" value="1.1694"/>
+        <joint name="J5_wrist2" value="1.6232"/>
+        <joint name="J6_wrist3" value="4.7120"/>
+    </group_state>    
+    
+    
+    
     <!--END EFFECTOR: Purpose: Represent information about an end effector.-->
     <end_effector name="gripper" parent_link="end_effector_1" group="gripper"/>
     <!--VIRTUAL JOINT: Purpose: this element defines a virtual joint between a robot link and an external frame of reference (considered fixed with respect to the robot)-->
