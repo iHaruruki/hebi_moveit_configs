@@ -66,9 +66,9 @@ private:
       return;
     }
     
-    double offset_x = 0.04;
+    double offset_x = 0.03;
     double offset_y = 0.01; 
-    double offset_z = 0.05; 
+    double offset_z = 0.06; 
     
     geometry_msgs::msg::PoseStamped target_pose;
     target_pose.header.frame_id = "base_link";

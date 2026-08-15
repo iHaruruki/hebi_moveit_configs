@@ -29,7 +29,7 @@ private:
     moveit_msgs::msg::RobotTrajectory robot_traj;
     robot_traj.joint_trajectory.joint_names = joint_names;
 
-    double amplitude = 0.65;
+    double amplitude = 0.75;
     double time_step = 0.10;
     double start_j6 = 4.730; //current_positions[5];
     RCLCPP_INFO(this->get_logger(), "Current J6 = '%.3f'", start_j6);
@@ -55,7 +55,7 @@ private:
     trajectory_msgs::msg::JointTrajectoryPoint p_end;
     p_end.positions = current_positions;
     p_end.positions[5] = start_j6;
-    p_end.time_from_start = rclcpp::Duration::from_seconds(0.25);
+    p_end.time_from_start = rclcpp::Duration::from_seconds(0.20);
     robot_traj.joint_trajectory.points.push_back(p_end);
 
     RCLCPP_INFO(this->get_logger(), "MoveItの計画ラグをスキップ！高速交互回転を実行します！");

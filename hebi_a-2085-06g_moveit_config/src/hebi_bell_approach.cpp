@@ -70,8 +70,8 @@ private:
     }
     
     double offset_x = -0.08;
-    double offset_y = 0.01;
-    double offset_z = -0.02;
+    double offset_y = 0.00;
+    double offset_z = -0.03;
     
     geometry_msgs::msg::PoseStamped target_pose;
     target_pose.header.frame_id = "base_link";

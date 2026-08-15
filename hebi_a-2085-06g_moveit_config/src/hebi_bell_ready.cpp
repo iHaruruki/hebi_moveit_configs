@@ -66,8 +66,8 @@ private:
       return;
     }
     
-    double offset_x = -0.08;
-    double offset_y = 0.01;
+    double offset_x = -0.09;
+    double offset_y = 0.00;
     double offset_z = 0.07;
     
     geometry_msgs::msg::PoseStamped target_pose;
